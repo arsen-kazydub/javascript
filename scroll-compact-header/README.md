@@ -13,7 +13,7 @@ and restores it when scrolled back to the top.
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/scroll-compact-header/](https://demo.arsen.pro/js/scroll-compact-header/)
+[https://demo.arsen.pro/javascript/scroll-compact-header/](https://demo.arsen.pro/javascript/scroll-compact-header/)
 
 
 ## Features
