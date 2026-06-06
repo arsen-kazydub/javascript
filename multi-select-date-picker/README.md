@@ -1,6 +1,6 @@
 # Multi-Select Date Picker
 
-A plain JavaScript plugin for selecting a date using three synchronized `select` boxes
+A pure JavaScript plugin for selecting a date using three synchronized `select` boxes
 (year, month, day). Prevents selecting invalid dates.
 
 
@@ -13,7 +13,7 @@ A plain JavaScript plugin for selecting a date using three synchronized `select`
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/multi-select-date-picker/](https://demo.arsen.pro/js/multi-select-date-picker/)
+[https://demo.arsen.pro/javascript/multi-select-date-picker/](https://demo.arsen.pro/javascript/multi-select-date-picker/)
 
 
 ## Features
