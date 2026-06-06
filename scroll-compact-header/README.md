@@ -1,6 +1,6 @@
 # Scroll Compact Header
 
-A minimal plain JavaScript plugin that shrinks the header height when the page is scrolled down,
+A minimal pure JavaScript plugin that shrinks the header height when the page is scrolled down,
 and restores it when scrolled back to the top.
 
 
