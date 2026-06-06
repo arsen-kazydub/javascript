@@ -1,6 +1,6 @@
 # Toggle Text
 
-A plain JavaScript plugin that creates collapsible text sections,
+A pure JavaScript plugin that creates collapsible text sections,
 offering configurable break points and smooth height transitions.
 
 
