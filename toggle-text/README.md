@@ -13,7 +13,7 @@ offering configurable break points and smooth height transitions.
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/toggle-text/](https://demo.arsen.pro/js/toggle-text/)
+[https://demo.arsen.pro/javascript/toggle-text/](https://demo.arsen.pro/javascript/toggle-text/)
 
 
 ## Features
