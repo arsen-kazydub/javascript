@@ -1,6 +1,6 @@
 # Customized Select
 
-A plain JavaScript plugin that creates a custom dropdown UI while keeping the native `<select>`
+A pure JavaScript plugin that creates a custom dropdown UI while keeping the native `<select>`
 fully functional and supporting both mouse and keyboard interactions.
 
 
@@ -13,7 +13,7 @@ fully functional and supporting both mouse and keyboard interactions.
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/customized-select/](https://demo.arsen.pro/js/customized-select/)
+[https://demo.arsen.pro/javascript/customized-select/](https://demo.arsen.pro/javascript/customized-select/)
 
 
 ## Features
