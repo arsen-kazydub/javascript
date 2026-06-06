@@ -1,6 +1,6 @@
 # Customized File Input
 
-A plain JavaScript plugin that enhances the native `<input type="file">` with decorative elements,
+A pure JavaScript plugin that enhances the native `<input type="file">` with decorative elements,
 allowing to achieve any visual appearance while maintaining full functionality.
 
 
@@ -13,7 +13,7 @@ allowing to achieve any visual appearance while maintaining full functionality.
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/customized-file-input/](https://demo.arsen.pro/js/customized-file-input/)
+[https://demo.arsen.pro/javascript/customized-file-input/](https://demo.arsen.pro/javascript/customized-file-input/)
 
 
 ## Features
