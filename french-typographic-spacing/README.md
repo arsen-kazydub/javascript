@@ -1,6 +1,6 @@
 # French Typographic Spacing
 
-A plain JavaScript plugin that adds non-breaking spaces before punctuation marks,
+A pure JavaScript plugin that adds non-breaking spaces before punctuation marks,
 following French typographic rules.
 
 
@@ -13,7 +13,7 @@ following French typographic rules.
 <div>&nbsp;</div>
 
 **Live Demo:**
-[https://demo.arsen.pro/js/french-typographic-spacing/](https://demo.arsen.pro/js/french-typographic-spacing/)
+[https://demo.arsen.pro/javascript/french-typographic-spacing/](https://demo.arsen.pro/javascript/french-typographic-spacing/)
 
 
 ## Features
