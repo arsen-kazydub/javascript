@@ -39,7 +39,7 @@ fully functional and supporting both mouse and keyboard interactions.
 * CSS3
 
 
-## How to use
+## How to Use
 
 1. Include `customized-select.css` and `customized-select.js` in your page.
 2. Initialize the plugin with default or custom options.
