@@ -30,7 +30,7 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 * HTML5
 
 
-## How to use
+## How to Use
 
 1. Add three `select` boxes to your form.
 2. Include `multi-select-date-picker.js` in your page.
