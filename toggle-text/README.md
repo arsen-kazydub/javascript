@@ -35,7 +35,7 @@ offering configurable break points and smooth height transitions.
 * CSS3
 
 
-## How to use
+## How to Use
 
 1. Prepare your HTML markup as in the example below.
 2. Include `toggle-text.css` and `toggle-text.js` in your page.
