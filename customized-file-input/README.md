@@ -35,7 +35,7 @@ allowing to achieve any visual appearance while maintaining full functionality.
 * CSS3
 
 
-## How to use
+## How to Use
 
 1. Include `customized-file-input.css` and `customized-file-input.js` in your page.
 2. Initialize the plugin with default or custom options.
