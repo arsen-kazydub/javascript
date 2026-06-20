@@ -36,7 +36,7 @@ Each input field is paired with a slider for fast and intuitive data entry.
 * Bootstrap 5
 
 
-## How to use
+## How to Use
 
 1. Add the calculator form to your page: `<div id="mortgage-calculator">…</div>`.
 2. Include `mortgage-calculator.css` and `mortgage-calculator.js` in your page.
