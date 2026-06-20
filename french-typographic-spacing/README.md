@@ -28,7 +28,7 @@ following French typographic rules.
 * JavaScript (ES6+)
 
 
-## How to use
+## How to Use
 
 1. Include `french-typographic-spacing.js` in your page.
 2. Initialize the plugin with default or custom options.
