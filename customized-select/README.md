@@ -8,7 +8,8 @@ fully functional and supporting both mouse and keyboard interactions.
 
 <kbd>
   <img src="screenshots/customized-select.png"
-       alt="Three customized select fields (Gender, Country, Age) in a single row demonstrating independent component instances">
+       alt="Three customized select fields (Gender, Country, Age) in a single row
+            demonstrating independent component instances">
 </kbd>
 
 <div>&nbsp;</div>
