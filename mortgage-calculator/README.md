@@ -7,13 +7,14 @@ Each input field is paired with a slider for fast and intuitive data entry.
 ## Preview
 
 <kbd>
-  <img src="screenshots/mortgage-calculator.png" alt="Mortgage Calculator">
+  <img src="screenshots/mortgage-calculator.png"
+       alt="Mortgage calculator form with four input fields paired with sliders
+            and a results section displaying monthly and total payments">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/mortgage-calculator/](https://demo.arsen.pro/javascript/mortgage-calculator/)
+**Live Demo:** https://demo.arsen.pro/javascript/mortgage-calculator/
 
 
 ## Features
