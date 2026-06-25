@@ -7,13 +7,13 @@ allowing to achieve any visual appearance while maintaining full functionality.
 ## Preview
 
 <kbd>
-  <img src="screenshots/customized-file-input.png" alt="Customized File Input">
+  <img src="screenshots/customized-file-input.png"
+       alt="Two identically styled file input fields stacked vertically">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/customized-file-input/](https://demo.arsen.pro/javascript/customized-file-input/)
+**Live Demo:** https://demo.arsen.pro/javascript/customized-file-input/
 
 
 ## Features
