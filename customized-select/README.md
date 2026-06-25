@@ -7,13 +7,13 @@ fully functional and supporting both mouse and keyboard interactions.
 ## Preview
 
 <kbd>
-  <img src="screenshots/customized-select.png" alt="Customized Select">
+  <img src="screenshots/customized-select.png"
+       alt="Three customized select fields (Gender, Country, Age) in a single row demonstrating independent component instances">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/customized-select/](https://demo.arsen.pro/javascript/customized-select/)
+**Live Demo:** https://demo.arsen.pro/javascript/customized-select/
 
 
 ## Features
