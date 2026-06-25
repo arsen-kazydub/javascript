@@ -7,13 +7,14 @@ offering configurable break points and smooth height transitions.
 ## Preview
 
 <kbd>
-  <img src="screenshots/toggle-text.png" alt="Toggle Text">
+  <img src="screenshots/toggle-text.png"
+       alt="Collapsible text block showing only the first paragraph
+            with a 'Read More' button below to expand hidden content">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/toggle-text/](https://demo.arsen.pro/javascript/toggle-text/)
+**Live Demo:** https://demo.arsen.pro/javascript/toggle-text/
 
 
 ## Features
