@@ -8,7 +8,8 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 <kbd>
   <img src="screenshots/customized-file-input.png"
-       alt="Two customized file input fields stacked vertically demonstrating independent component instances">
+       alt="Two customized file input fields stacked vertically
+            demonstrating independent component instances">
 </kbd>
 
 <div>&nbsp;</div>
