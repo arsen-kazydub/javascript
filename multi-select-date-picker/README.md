@@ -7,13 +7,15 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 ## Preview
 
 <kbd>
-  <img src="screenshots/multi-select-date-picker.png" alt="Multi-Select Date Picker">
+  <img src="screenshots/multi-select-date-picker.png"
+       alt="Multi-select date picker with year, month, and day dropdowns
+            that automatically disable invalid dates depending on month length
+            and leap year rules">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/multi-select-date-picker/](https://demo.arsen.pro/javascript/multi-select-date-picker/)
+**Live Demo:** https://demo.arsen.pro/javascript/multi-select-date-picker/
 
 
 ## Features
