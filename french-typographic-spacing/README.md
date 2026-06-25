@@ -8,7 +8,8 @@ following French typographic rules.
 
 <kbd>
   <img src="screenshots/french-typographic-spacing.png"
-       alt="Demo box showing a Latin placeholder text with a dropdown control above it to switch non-breaking space types (None, Narrow, Regular)">
+       alt="Demo box showing a Latin placeholder text with a dropdown control above it
+            to switch non-breaking space types (None, Narrow, Regular)">
 </kbd>
 
 <div>&nbsp;</div>
