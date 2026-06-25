@@ -7,13 +7,13 @@ following French typographic rules.
 ## Preview
 
 <kbd>
-  <img src="screenshots/french-typographic-spacing.png" alt="French Typographic Spacing">
+  <img src="screenshots/french-typographic-spacing.png"
+       alt="Demo box showing a Latin placeholder text with a dropdown control above it to switch non-breaking space types (None, Narrow, Regular)">
 </kbd>
 
 <div>&nbsp;</div>
 
-**Live Demo:**
-[https://demo.arsen.pro/javascript/french-typographic-spacing/](https://demo.arsen.pro/javascript/french-typographic-spacing/)
+**Live Demo:** https://demo.arsen.pro/javascript/french-typographic-spacing/
 
 
 ## Features
