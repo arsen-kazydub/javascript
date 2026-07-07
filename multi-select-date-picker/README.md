@@ -3,8 +3,10 @@
 A pure JavaScript plugin for selecting a date using three synchronized `select` boxes
 (year, month, day). Prevents selecting invalid dates.
 
+**Live Demo:** https://demo.arsen.pro/javascript/multi-select-date-picker/
 
-## Preview
+
+## Screenshots
 
 <kbd>
   <img src="screenshots/multi-select-date-picker.png"
@@ -12,10 +14,6 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
             that automatically disable invalid dates depending on month length
             and leap year rules">
 </kbd>
-
-<div>&nbsp;</div>
-
-**Live Demo:** https://demo.arsen.pro/javascript/multi-select-date-picker/
 
 
 ## Features

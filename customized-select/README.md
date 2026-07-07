@@ -3,18 +3,16 @@
 A pure JavaScript plugin that creates a custom dropdown UI while keeping the native `<select>`
 fully functional and supporting both mouse and keyboard interactions.
 
+**Live Demo:** https://demo.arsen.pro/javascript/customized-select/
 
-## Preview
+
+## Screenshots
 
 <kbd>
   <img src="screenshots/customized-select.png"
        alt="Three customized select fields (Gender, Country, Age) in a single row
             demonstrating independent component instances">
 </kbd>
-
-<div>&nbsp;</div>
-
-**Live Demo:** https://demo.arsen.pro/javascript/customized-select/
 
 
 ## Features
@@ -53,7 +51,7 @@ fully functional and supporting both mouse and keyboard interactions.
 | `width`                 | `string \| number \| null` | `null`                                     | Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated    |
 | `visibleOptions`        | `number`                   | `0`                                        | Maximum number of visible options before scrolling appears; if 0, all options are shown |
 | `baseZIndex`            | `number`                   | `100`                                      | Base z-index applied to each ui-select to appear above page content                     |
-| `wrapperClass `         | `string`                   | `'customized-select'`                      | CSS class for the wrapper element                                                       |
+| `wrapperClass`          | `string`                   | `'customized-select'`                      | CSS class for the wrapper element                                                       |
 | `wrapperSelectedClass`  | `string`                   | `'customized-select--selected'`            | CSS class for the wrapper element applied when the ui-select is open                    |
 | `uiSelectClass`         | `string`                   | `'customized-select__ui'`                  | CSS class for the ui-select element                                                     |
 | `uiSelectValueClass`    | `string`                   | `'customized-select__ui-value'`            | CSS class for the element showing the selected value                                    |

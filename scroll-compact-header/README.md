@@ -3,18 +3,16 @@
 A minimal pure JavaScript plugin that shrinks the header height when the page is scrolled down,
 and restores it when scrolled back to the top.
 
+**Live Demo:** https://demo.arsen.pro/javascript/scroll-compact-header/
 
-## Preview
+
+## Screenshots
 
 <kbd>
   <img src="screenshots/scroll-compact-header.png"
        alt="Comparison of a website header in two states: full-height header
             and compact header that appears after scrolling down">
 </kbd>
-
-<div>&nbsp;</div>
-
-**Live Demo:** https://demo.arsen.pro/javascript/scroll-compact-header/
 
 
 ## Features
