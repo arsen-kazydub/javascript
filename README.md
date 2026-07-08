@@ -5,7 +5,7 @@ actively maintained as a reusable library. With every new implementation,
 it evolves further, remaining up-to-date and production-tested.
 
 | Project                    | Description                                                   | Demo                                                                      |
-|----------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------|
+|----------------------------|---------------------------------------------------------------|:-------------------------------------------------------------------------:|
 | Customized File Input      | Decorative wrapper around the native `<input type="file">`    | [:rocket:](https://demo.arsen.pro/javascript/customized-file-input/)      |
 | Customized Select          | Custom dropdown UI synchronized with the native `<select>`    | [:rocket:](https://demo.arsen.pro/javascript/customized-select/)          |
 | French Typographic Spacing | French typography formatter                                   | [:rocket:](https://demo.arsen.pro/javascript/french-typographic-spacing/) |
