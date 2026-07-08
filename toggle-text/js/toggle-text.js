@@ -1,18 +1,25 @@
 /**
  * @typedef {Object} ToggleTextOptions
- * @property {string} [breakPointSelector = 'p:nth-child(2)']
+ *
+ * @property {string} [breakPointSelector='p:nth-child(2)']
  * - CSS selector for the element before which a break point will be inserted
- * @property {string} [contentClass = 'toggle-text__content']
+ *
+ * @property {string} [contentClass='toggle-text__content']
  * - CSS class for the content container
- * @property {string} [breakPointClass = 'toggle-text__break-point']
+ *
+ * @property {string} [breakPointClass='toggle-text__break-point']
  * - CSS class for the inserted break point element
- * @property {string} [btnClass = 'toggle-text__btn']
+ *
+ * @property {string} [btnClass='toggle-text__btn']
  * - CSS class for the toggle button
- * @property {string} [btnTextExpand = 'Read More']
+ *
+ * @property {string} [btnTextExpand='Read More']
  * - Button text when content is collapsed
- * @property {string} [btnTextCollapse = 'Read Less']
+ *
+ * @property {string} [btnTextCollapse='Read Less']
  * - Button text when content is expanded
- * @property {number} [transitionDuration = 400]
+ *
+ * @property {number} [transitionDuration=400]
  * - Duration of the height transition in milliseconds
  */
 
@@ -22,6 +29,7 @@
  * @param {ToggleTextOptions} [options] - Custom configuration options
  * @throws {Error} If required elements (content or button) are missing inside the root
  */
+
 class ToggleText {
   constructor(root, options = {}) {
     this.root = root;

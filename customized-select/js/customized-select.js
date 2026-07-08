@@ -1,26 +1,37 @@
 /**
  * @typedef {Object} CustomizedSelectOptions
- * @property {string|number|null} [width = null]
+ *
+ * @property {string|number|null} [width=null]
  * - Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated
- * @property {number} [visibleOptions = 0]
+ *
+ * @property {number} [visibleOptions=0]
  * - Maximum number of visible options before scrolling appears; if 0, all options are shown
- * @property {number} [baseZIndex = 100]
+ *
+ * @property {number} [baseZIndex=100]
  * - Base z-index applied to each ui-select to appear above page content
- * @property {string} [wrapperClass = 'customized-select']
+ *
+ * @property {string} [wrapperClass='customized-select']
  * - CSS class for the wrapper element
- * @property {string} [wrapperSelectedClass = 'customized-select--selected']
+ *
+ * @property {string} [wrapperSelectedClass='customized-select--selected']
  * - CSS class for the wrapper element applied when the ui-select is open
- * @property {string} [uiSelectClass = 'customized-select__ui']
+ *
+ * @property {string} [uiSelectClass='customized-select__ui']
  * - CSS class for the ui-select element
- * @property {string} [uiSelectValueClass = 'customized-select__ui-value']
+ *
+ * @property {string} [uiSelectValueClass='customized-select__ui-value']
  * - CSS class for the element showing the selected value
- * @property {string} [uiSelectArrowClass = 'customized-select__ui-arrow']
+ *
+ * @property {string} [uiSelectArrowClass='customized-select__ui-arrow']
  * - CSS class for the dropdown arrow
- * @property {string} [uiOptionsListClass = 'customized-select__ui-options']
+ *
+ * @property {string} [uiOptionsListClass='customized-select__ui-options']
  * - CSS class for the options list container
- * @property {string} [uiOptionClass = 'customized-select__ui-option']
+ *
+ * @property {string} [uiOptionClass='customized-select__ui-option']
  * - CSS class for each option in the list
- * @property {string} [uiSelectedOptionClass = 'customized-select__ui-option--selected']
+ *
+ * @property {string} [uiSelectedOptionClass='customized-select__ui-option--selected']
  * - CSS class for the currently selected option
  */
 
@@ -29,6 +40,7 @@
  * @param {HTMLSelectElement} select - The native <select> element
  * @param {CustomizedSelectOptions} [options] - Custom configuration options
  */
+
 class CustomizedSelect {
 
   // all class instances on the page

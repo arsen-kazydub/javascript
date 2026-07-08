@@ -1,13 +1,16 @@
 /**
  * @typedef {Object} FrenchTypographicSpacingOptions
- * @property {'none'|'narrow'|'regular'} [nbspType = 'regular']
+ *
+ * @property {'none'|'narrow'|'regular'} [nbspType='regular']
  * - Type of non-breaking space to insert
  *   - 'none'    : Do not insert any non-breaking spaces and remove existing ones
  *   - 'narrow'  : Insert narrow non-breaking spaces
  *   - 'regular' : Insert regular non-breaking spaces
- * @property {string} [insertBeforeChars = '?!:;%']
+ *
+ * @property {string} [insertBeforeChars='?!:;%']
  * - Characters before which a non-breaking space should be inserted
- * @property {string[]} [skipTags = ['STYLE', 'SCRIPT', 'NOSCRIPT', 'IFRAME', 'INPUT', 'TEXTAREA']]
+ *
+ * @property {string[]} [skipTags=['STYLE', 'SCRIPT', 'NOSCRIPT', 'IFRAME', 'INPUT', 'TEXTAREA']]
  * - HTML tags to skip when processing
  */
 
@@ -16,6 +19,7 @@
  * @param {HTMLElement} root - The root container element whose text nodes will be processed
  * @param {FrenchTypographicSpacingOptions} [options] - Custom configuration options
  */
+
 class FrenchTypographicSpacing {
   constructor(root, options = {}) {
     this.root = root;

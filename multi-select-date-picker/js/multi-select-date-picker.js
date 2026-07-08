@@ -1,8 +1,8 @@
 /**
  * @typedef {Object} MultiSelectDatePickerOptions
- * @property {string} [yearSelector = '#date-year']   - CSS selector for the year select
- * @property {string} [monthSelector = '#date-month'] - CSS selector for the month select
- * @property {string} [daySelector = '#date-day']     - CSS selector for the day select
+ * @property {string} [yearSelector='#date-year']   - CSS selector for the year select
+ * @property {string} [monthSelector='#date-month'] - CSS selector for the month select
+ * @property {string} [daySelector='#date-day']     - CSS selector for the day select
  */
 
 /**
@@ -11,6 +11,7 @@
  * @param {MultiSelectDatePickerOptions} [options] - Custom configuration options
  * @throws {Error} If any required elements are not found
  */
+
 class MultiSelectDatePicker {
   constructor(root, options = {}) {
     this.root = root;
