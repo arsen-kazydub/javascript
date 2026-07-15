@@ -30,8 +30,24 @@ according to French typographic rules.
 
 ## How to Use
 
-1. Include `french-typographic-spacing.js` in your page.
-2. Initialize the plugin with default or custom options.
+### Setup
+
+Include `french-typographic-spacing.js`.
+
+
+### Initialization
+
+```js
+const container = document.querySelector('.container');
+
+// Default options
+new FrenchTypographicSpacing(container);
+
+// Custom options
+new FrenchTypographicSpacing(container, {
+  nbspType: 'narrow'
+});
+```
 
 
 ## Options
