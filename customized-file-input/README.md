@@ -36,8 +36,24 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 ## How to Use
 
-1. Include `customized-file-input.css` and `customized-file-input.js` in your page.
-2. Initialize the plugin with default or custom options.
+### Setup
+
+Include `customized-file-input.css` and `customized-file-input.js`.
+
+
+### Initialization
+
+```js
+const input = document.querySelector('input[type="file"]');
+
+// Default options
+new CustomizedFileInput(input);
+
+// Custom options
+new CustomizedFileInput(input, {
+  fakeBtnText: 'Select File'
+});
+```
 
 
 ## Options
