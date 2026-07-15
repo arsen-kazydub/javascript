@@ -40,8 +40,25 @@ fully functional and supporting both mouse and keyboard interactions.
 
 ## How to Use
 
-1. Include `customized-select.css` and `customized-select.js` in your page.
-2. Initialize the plugin with default or custom options.
+### Setup
+
+Include `customized-select.css` and `customized-select.js`.
+
+
+### Initialization
+
+```js
+const select = document.querySelector('select');
+
+// Default options
+new CustomizedSelect(select);
+
+// Custom options
+new CustomizedSelect(select, {
+  width: '100%',
+  visibleOptions: 6
+});
+```
 
 
 ## Options
