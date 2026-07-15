@@ -32,9 +32,47 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 
 ## How to Use
 
-1. Add three `select` boxes to your form.
-2. Include `multi-select-date-picker.js` in your page.
-3. Initialize the plugin with default or custom options.
+### Setup
+
+Include `multi-select-date-picker.js`.
+
+
+### Markup
+
+Add a container with three `select` elements for the year, month, and day.
+
+```html
+<div id="date-picker">
+  <select id="date-year">
+    <option value="">Year</option>
+  </select>
+
+  <select id="date-month">
+    <option value="">Month</option>
+  </select>
+
+  <select id="date-day">
+    <option value="">Day</option>
+  </select>
+</div>
+```
+
+
+### Initialization
+
+```js
+const container = document.getElementById('date-picker');
+
+// Default options
+new MultiSelectDatePicker(container);
+
+// Custom options
+new MultiSelectDatePicker(container, {
+  yearSelector: '#my-year',
+  monthSelector: '.my-month',
+  daySelector: 'select:last-of-type'
+});
+```
 
 
 ## Options

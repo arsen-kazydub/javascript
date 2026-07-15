@@ -40,5 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // initialization
   const root = document.getElementById('date-picker');
-  new MultiSelectDatePicker(root, { /* options */ });
+  new MultiSelectDatePicker(root);
 });
