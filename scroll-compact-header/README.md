@@ -1,6 +1,6 @@
 # Scroll Compact Header
 
-A minimal pure JavaScript plugin that shrinks the header height when the page is scrolled down,
+A minimal pure JavaScript plugin that shrinks the header height when the page is scrolled down
 and restores it when scrolled back to the top.
 
 **Live Demo:** https://demo.arsen.pro/javascript/scroll-compact-header/
@@ -10,8 +10,7 @@ and restores it when scrolled back to the top.
 
 <kbd>
   <img src="screenshots/scroll-compact-header.png"
-       alt="Comparison of a website header in two states: full-height header
-            and compact header that appears after scrolling down">
+       alt="Comparison of a full-height header and a compact header after scrolling">
 </kbd>
 
 
@@ -32,5 +31,28 @@ and restores it when scrolled back to the top.
 
 ## How to Use
 
-1. Include `scroll-compact-header.css` and `scroll-compact-header.js` in your page.
-2. Initialize the plugin, optionally customizing the header's `id`, and the CSS class toggled on scroll.
+### Setup
+
+Include `scroll-compact-header.css` and `scroll-compact-header.js`.
+
+
+### Initialization
+
+```js
+const header = document.getElementById('header');
+
+// Default options
+new ScrollCompactHeader(header);
+
+// Custom options
+new ScrollCompactHeader(header, {
+  compactClass: 'header-small'
+});
+```
+
+
+## Options
+
+| Option         | Type     | Default            | Description                                       |
+|----------------|----------|--------------------|---------------------------------------------------|
+| `compactClass` | `string` | `'header-compact'` | CSS class applied when the header becomes compact |
