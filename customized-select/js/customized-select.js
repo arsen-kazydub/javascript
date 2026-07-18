@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} CustomizedSelectOptions
+ * @typedef {object} CustomizedSelectOptions
  *
  * @property {string|number|null} [width=null]
  * - Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated
@@ -10,28 +10,31 @@
  * @property {number} [baseZIndex=100]
  * - Base z-index applied to each ui-select to appear above page content
  *
- * @property {string} [wrapperClass='customized-select']
+ * @property {object} [classes]
+ * - CSS class names
+ *
+ * @property {string} [classes.wrapper='customized-select']
  * - CSS class for the wrapper element
  *
- * @property {string} [wrapperSelectedClass='customized-select--selected']
+ * @property {string} [classes.wrapperSelected='customized-select--selected']
  * - CSS class for the wrapper element applied when the ui-select is open
  *
- * @property {string} [uiSelectClass='customized-select__ui']
+ * @property {string} [classes.uiSelect='customized-select__ui']
  * - CSS class for the ui-select element
  *
- * @property {string} [uiSelectValueClass='customized-select__ui-value']
+ * @property {string} [classes.uiSelectValue='customized-select__ui-value']
  * - CSS class for the element showing the selected value
  *
- * @property {string} [uiSelectArrowClass='customized-select__ui-arrow']
+ * @property {string} [classes.uiSelectArrow='customized-select__ui-arrow']
  * - CSS class for the dropdown arrow
  *
- * @property {string} [uiOptionsListClass='customized-select__ui-options']
+ * @property {string} [classes.uiOptionsList='customized-select__ui-options']
  * - CSS class for the options list container
  *
- * @property {string} [uiOptionClass='customized-select__ui-option']
+ * @property {string} [classes.uiOption='customized-select__ui-option']
  * - CSS class for each option in the list
  *
- * @property {string} [uiSelectedOptionClass='customized-select__ui-option--selected']
+ * @property {string} [classes.uiSelectedOption='customized-select__ui-option--selected']
  * - CSS class for the currently selected option
  */
 
@@ -93,19 +96,29 @@ class CustomizedSelect {
       CustomizedSelect.hasEscapeKeyListener = true;
     }
 
-    this.options = {
+    const defaults = {
       width                 : null,
       visibleOptions        : 0,
       baseZIndex            : 100,
-      wrapperClass          : 'customized-select',
-      wrapperSelectedClass  : 'customized-select--selected',
-      uiSelectClass         : 'customized-select__ui',
-      uiSelectValueClass    : 'customized-select__ui-value',
-      uiSelectArrowClass    : 'customized-select__ui-arrow',
-      uiOptionsListClass    : 'customized-select__ui-options',
-      uiOptionClass         : 'customized-select__ui-option',
-      uiSelectedOptionClass : 'customized-select__ui-option--selected',
-      ...options
+      classes: {
+        wrapper          : 'customized-select',
+        wrapperSelected  : 'customized-select--selected',
+        uiSelect         : 'customized-select__ui',
+        uiSelectValue    : 'customized-select__ui-value',
+        uiSelectArrow    : 'customized-select__ui-arrow',
+        uiOptionsList    : 'customized-select__ui-options',
+        uiOption         : 'customized-select__ui-option',
+        uiSelectedOption : 'customized-select__ui-option--selected',
+      },
+    };
+
+    this.options = {
+      ...defaults,
+      ...options,
+      classes: {
+        ...defaults.classes,
+        ...(options.classes ?? {}),
+      },
     };
 
     // helper class for measuring width and height of the options list
@@ -150,13 +163,13 @@ class CustomizedSelect {
 
 
   isCustomized() {
-    return this.select.parentNode.classList.contains(this.options.wrapperClass);
+    return this.select.parentNode.classList.contains(this.options.classes.wrapper);
   }
 
 
   createWrapper() {
     this.wrapperEl = Object.assign(document.createElement('div'), {
-      className: this.options.wrapperClass
+      className: this.options.classes.wrapper
     });
     this.select.parentNode.insertBefore(this.wrapperEl, this.select);
     this.wrapperEl.append(this.select);
@@ -166,23 +179,23 @@ class CustomizedSelect {
   createUiSelect() {
     // ui-select wrapper
     this.uiSelect = Object.assign(document.createElement('div'), {
-      className: this.options.uiSelectClass
+      className: this.options.classes.uiSelect
     });
 
     // element for displaying the currently selected option
     this.uiSelectValue = Object.assign(document.createElement('div'), {
-      className: this.options.uiSelectValueClass,
+      className: this.options.classes.uiSelectValue,
       textContent: this.select.querySelector('option:checked')?.textContent || ''
     });
 
     // decorative dropdown arrow
     this.uiSelectArrow = Object.assign(document.createElement('div'), {
-      className: this.options.uiSelectArrowClass
+      className: this.options.classes.uiSelectArrow
     });
 
     // options container
     this.uiOptionsList = Object.assign(document.createElement('ul'), {
-      className: this.options.uiOptionsListClass,
+      className: this.options.classes.uiOptionsList,
       tabIndex: -1
     });
 
@@ -196,8 +209,8 @@ class CustomizedSelect {
       const li = document.createElement('li');
 
       const cssClasses = [
-        this.options.uiOptionClass,
-        option.selected ? this.options.uiSelectedOptionClass : ''
+        this.options.classes.uiOption,
+        option.selected ? this.options.classes.uiSelectedOption : ''
       ].filter(Boolean).join(' ');
 
       li.textContent = option.textContent;
@@ -297,7 +310,7 @@ class CustomizedSelect {
     CustomizedSelect.hasAnimatingInstances = true;
     this.isOpen = state;
 
-    this.wrapperEl.classList.toggle(this.options.wrapperSelectedClass, this.isOpen);
+    this.wrapperEl.classList.toggle(this.options.classes.wrapperSelected, this.isOpen);
 
     const uiSelectHeight = parseFloat(getComputedStyle(this.uiSelect).height) || 0;
 
@@ -367,7 +380,7 @@ class CustomizedSelect {
 
     // update ui-select
     this.uiSelectValue.textContent = value;
-    this.wrapperEl.classList.remove(this.options.wrapperSelectedClass);
+    this.wrapperEl.classList.remove(this.options.classes.wrapperSelected);
 
     // update <select> and trigger the change event
     this.select.value = value;
@@ -389,8 +402,8 @@ class CustomizedSelect {
 
 
   toggleUiOptionItemSelectedClass(uiOption) {
-    this.uiSelectedOption.classList.remove(this.options.uiSelectedOptionClass);
-    uiOption.classList.add(this.options.uiSelectedOptionClass);
+    this.uiSelectedOption.classList.remove(this.options.classes.uiSelectedOption);
+    uiOption.classList.add(this.options.classes.uiSelectedOption);
     this.uiSelectedOption = uiOption;
     this.uiSelectedOption.scrollIntoView({ block: 'nearest' });
   }

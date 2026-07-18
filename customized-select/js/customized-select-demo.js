@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Create options for the Country select box
   (function() {
-    const select = document.getElementById('user-country');
+    const select   = document.getElementById('user-country');
     const fragment = document.createDocumentFragment();
 
     const countries = [
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Create options for the Age select box
   (function() {
-    const select = document.getElementById('user-age');
+    const select   = document.getElementById('user-age');
     const fragment = document.createDocumentFragment();
 
-    const year = new Date().getFullYear();
+    const year     = new Date().getFullYear();
     const yearFrom = year - 10;
-    const yearTo = year - 100;
+    const yearTo   = year - 100;
 
     for (let i = yearFrom; i >= yearTo; i--) {
       const option = document.createElement('option');
@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document
     .querySelectorAll('select')
     .forEach(el => new CustomizedSelect(el, {
-      width: '100%', visibleOptions: 6
+      width: '100%',
+      visibleOptions: 6
     }));
 
 });

@@ -63,16 +63,17 @@ new CustomizedSelect(select, {
 
 ## Options
 
-| Option                  | Type                       | Default                                    | Description                                                                             |
-|-------------------------|----------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
-| `width`                 | `string \| number \| null` | `null`                                     | Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated    |
-| `visibleOptions`        | `number`                   | `0`                                        | Maximum number of visible options before scrolling appears; if 0, all options are shown |
-| `baseZIndex`            | `number`                   | `100`                                      | Base z-index applied to each ui-select to appear above page content                     |
-| `wrapperClass`          | `string`                   | `'customized-select'`                      | CSS class for the wrapper element                                                       |
-| `wrapperSelectedClass`  | `string`                   | `'customized-select--selected'`            | CSS class for the wrapper element applied when the ui-select is open                    |
-| `uiSelectClass`         | `string`                   | `'customized-select__ui'`                  | CSS class for the ui-select element                                                     |
-| `uiSelectValueClass`    | `string`                   | `'customized-select__ui-value'`            | CSS class for the element showing the selected value                                    |
-| `uiSelectArrowClass`    | `string`                   | `'customized-select__ui-arrow'`            | CSS class for the dropdown arrow                                                        |
-| `uiOptionsListClass`    | `string`                   | `'customized-select__ui-options'`          | CSS class for the options list container                                                |
-| `uiOptionClass`         | `string`                   | `'customized-select__ui-option'`           | CSS class for each option in the list                                                   |
-| `uiSelectedOptionClass` | `string`                   | `'customized-select__ui-option--selected'` | CSS class for the currently selected option                                             |
+| Option                     | Type                       | Default                                    | Description                                                                             |
+|----------------------------|----------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
+| `width`                    | `string \| number \| null` | `null`                                     | Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated    |
+| `visibleOptions`           | `number`                   | `0`                                        | Maximum number of visible options before scrolling appears; if 0, all options are shown |
+| `baseZIndex`               | `number`                   | `100`                                      | Base z-index applied to each ui-select to appear above page content                     |
+| `classes`                  | `object`                   | `{...}`                                    | CSS class names                                                                         |
+| `classes.wrapper`          | `string`                   | `'customized-select'`                      | CSS class for the wrapper element                                                       |
+| `classes.wrapperSelected`  | `string`                   | `'customized-select--selected'`            | CSS class for the wrapper element applied when the ui-select is open                    |
+| `classes.uiSelect`         | `string`                   | `'customized-select__ui'`                  | CSS class for the ui-select element                                                     |
+| `classes.uiSelectValue`    | `string`                   | `'customized-select__ui-value'`            | CSS class for the element showing the selected value                                    |
+| `classes.uiSelectArrow`    | `string`                   | `'customized-select__ui-arrow'`            | CSS class for the dropdown arrow                                                        |
+| `classes.uiOptionsList`    | `string`                   | `'customized-select__ui-options'`          | CSS class for the options list container                                                |
+| `classes.uiOption`         | `string`                   | `'customized-select__ui-option'`           | CSS class for each option in the list                                                   |
+| `classes.uiSelectedOption` | `string`                   | `'customized-select__ui-option--selected'` | CSS class for the currently selected option                                             |
