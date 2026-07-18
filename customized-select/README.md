@@ -9,7 +9,7 @@ fully functional and supporting both mouse and keyboard interactions.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/customized-select.png"
+  <img src="screenshots/customized-select.webp"
        alt="Three customized select fields (Gender, Country, Age) in a single row
             demonstrating independent component instances">
 </kbd>
