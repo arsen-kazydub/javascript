@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} FrenchTypographicSpacingOptions
+ * @typedef {object} FrenchTypographicSpacingOptions
  *
  * @property {'none'|'narrow'|'regular'} [nbspType='regular']
  * - Type of non-breaking space to insert
