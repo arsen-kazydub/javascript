@@ -9,7 +9,7 @@ Each input field is paired with a slider for fast and intuitive data entry.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/mortgage-calculator.png"
+  <img src="screenshots/mortgage-calculator.webp"
        alt="Mortgage calculator form with four input fields paired with sliders
             and a results section displaying monthly and total payments">
 </kbd>
