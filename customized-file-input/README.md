@@ -58,9 +58,10 @@ new CustomizedFileInput(input, {
 
 ## Options
 
-| Option           | Type     | Default                               | Description                                                                 |
-|------------------|----------|---------------------------------------|-----------------------------------------------------------------------------|
-| `wrapperClass`   | `string` | `'customized-file-input'`             | CSS class for the wrapper element containing the file input and decorations |
-| `fakeInputClass` | `string` | `'customized-file-input__fake-input'` | CSS class for the fake input where the selected file name is displayed      |
-| `fakeBtnClass`   | `string` | `'customized-file-input__fake-btn'`   | CSS class for the fake button                                               |
-| `fakeBtnText`    | `string` | `'Browse'`                            | Text displayed inside the fake button                                       |
+| Option              | Type     | Default                               | Description                                                                         |
+|---------------------|----------|---------------------------------------|-------------------------------------------------------------------------------------|
+| `fakeBtnText`       | `string` | `'Browse'`                            | Text displayed inside the fake button                                               |
+| `classes`           | `object` | `{...}`                               | CSS class names                                                                     |
+| `classes.wrapper`   | `string` | `'customized-file-input'`             | CSS class for the wrapper element containing the file input and decorative elements |
+| `classes.fakeInput` | `string` | `'customized-file-input__fake-input'` | CSS class for the fake input where the selected file name is displayed              |
+| `classes.fakeBtn`   | `string` | `'customized-file-input__fake-btn'`   | CSS class for the fake button                                                       |

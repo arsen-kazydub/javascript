@@ -1,17 +1,20 @@
 /**
- * @typedef {Object} CustomizedFileInputOptions
- *
- * @property {string} [wrapperClass='customized-file-input']
- * - CSS class for the wrapper element containing the file input and decorative elements
- *
- * @property {string} [fakeInputClass='customized-file-input__fake-input']
- * - CSS class for the fake input where the selected file name is displayed
- *
- * @property {string} [fakeBtnClass='customized-file-input__fake-btn']
- * - CSS class for the fake button
+ * @typedef {object} CustomizedFileInputOptions
  *
  * @property {string} [fakeBtnText='Browse']
  * - Text displayed inside the fake button
+ *
+ * @property {object} [classes]
+ * - CSS class names
+ *
+ * @property {string} [classes.wrapper='customized-file-input']
+ * - CSS class for the wrapper element containing the file input and decorative elements
+ *
+ * @property {string} [classes.fakeInput='customized-file-input__fake-input']
+ * - CSS class for the fake input where the selected file name is displayed
+ *
+ * @property {string} [classes.fakeBtn='customized-file-input__fake-btn']
+ * - CSS class for the fake button
  */
 
 /**
@@ -25,12 +28,22 @@ class CustomizedFileInput {
     this.fileInput = fileInput;
     if (!this.fileInput) return;
 
+    const defaults = {
+      fakeBtnText : 'Browse',
+      classes: {
+        wrapper   : 'customized-file-input',
+        fakeInput : 'customized-file-input__fake-input',
+        fakeBtn   : 'customized-file-input__fake-btn',
+      },
+    };
+
     this.options = {
-      wrapperClass   : 'customized-file-input',
-      fakeInputClass : 'customized-file-input__fake-input',
-      fakeBtnClass   : 'customized-file-input__fake-btn',
-      fakeBtnText    : 'Browse',
-      ...options
+      ...defaults,
+      ...options,
+      classes: {
+        ...defaults.classes,
+        ...(options.classes ?? {}),
+      },
     };
 
     this.wrapperEl = null;
@@ -49,13 +62,13 @@ class CustomizedFileInput {
 
 
   isCustomized() {
-    return this.fileInput.parentNode.classList.contains(this.options.wrapperClass);
+    return this.fileInput.parentNode.classList.contains(this.options.classes.wrapper);
   }
 
 
   createWrapper() {
     this.wrapperEl = Object.assign(document.createElement('div'), {
-      className: this.options.wrapperClass
+      className: this.options.classes.wrapper
     });
     this.fileInput.parentNode.insertBefore(this.wrapperEl, this.fileInput);
     this.wrapperEl.append(this.fileInput);
@@ -64,10 +77,10 @@ class CustomizedFileInput {
 
   createFakeInput() {
     this.fakeInput = document.createElement('div');
-    this.fakeInput.className = this.options.fakeInputClass;
+    this.fakeInput.className = this.options.classes.fakeInput;
 
     const fakeBtn = document.createElement('div');
-    fakeBtn.className = this.options.fakeBtnClass;
+    fakeBtn.className = this.options.classes.fakeBtn;
     fakeBtn.textContent = this.options.fakeBtnText;
 
     this.wrapperEl.append(this.fakeInput, fakeBtn);
