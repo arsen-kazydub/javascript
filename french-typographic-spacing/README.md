@@ -9,7 +9,7 @@ according to French typographic rules.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/french-typographic-spacing.png"
+  <img src="screenshots/french-typographic-spacing.webp"
        alt="Demo box showing a Latin placeholder text with a dropdown control above it
             to switch non-breaking space types (None, Narrow, Regular)">
 </kbd>
