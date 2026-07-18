@@ -97,9 +97,9 @@ class CustomizedSelect {
     }
 
     const defaults = {
-      width                 : null,
-      visibleOptions        : 0,
-      baseZIndex            : 100,
+      width              : null,
+      visibleOptions     : 0,
+      baseZIndex         : 100,
       classes: {
         wrapper          : 'customized-select',
         wrapperSelected  : 'customized-select--selected',
