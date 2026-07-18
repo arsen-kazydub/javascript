@@ -26,8 +26,8 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 
 ## Technologies
 
-* JavaScript (ES6+)
-* HTML5
+* JavaScript
+* HTML
 
 
 ## How to Use

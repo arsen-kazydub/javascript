@@ -24,9 +24,9 @@ and restores it when scrolled back to the top.
 
 ## Technologies
 
-* JavaScript (ES6+)
-* HTML5
-* CSS3
+* JavaScript
+* HTML
+* CSS
 
 
 ## How to Use

@@ -33,9 +33,9 @@ fully functional and supporting both mouse and keyboard interactions.
 
 ## Technologies
 
-* JavaScript (ES6+)
-* HTML5
-* CSS3
+* JavaScript
+* HTML
+* CSS
 
 
 ## How to Use

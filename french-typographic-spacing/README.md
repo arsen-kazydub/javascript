@@ -25,7 +25,7 @@ according to French typographic rules.
 
 ## Technologies
 
-* JavaScript (ES6+)
+* JavaScript
 
 
 ## How to Use

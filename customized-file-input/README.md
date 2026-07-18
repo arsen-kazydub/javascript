@@ -29,9 +29,9 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 ## Technologies
 
-* JavaScript (ES6+)
-* HTML5
-* CSS3
+* JavaScript
+* HTML
+* CSS
 
 
 ## How to Use

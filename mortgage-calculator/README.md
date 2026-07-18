@@ -29,10 +29,10 @@ Each input field is paired with a slider for fast and intuitive data entry.
 
 ## Technologies
 
-* JavaScript (ES6+)
-* HTML5
-* CSS3
-* Bootstrap 5
+* JavaScript
+* HTML
+* CSS
+* Bootstrap
 
 
 ## How to Use
