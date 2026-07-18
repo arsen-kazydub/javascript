@@ -9,7 +9,7 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/multi-select-date-picker.png"
+  <img src="screenshots/multi-select-date-picker.webp"
        alt="Multi-select date picker with year, month, and day dropdowns
             that automatically disable invalid dates depending on month length
             and leap year rules">
