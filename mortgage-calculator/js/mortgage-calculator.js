@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} MortgageCalculatorOptions
+ * @typedef {object} MortgageCalculatorOptions
  * @property {number} [price=1000000]      - Initial property price (USD)
  * @property {number} [downPayment=20]     - Initial down payment (%)
  * @property {number} [loanPeriod=25]      - Initial loan period (years)
