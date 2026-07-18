@@ -1,17 +1,8 @@
 /**
- * @typedef {Object} ToggleTextOptions
+ * @typedef {object} ToggleTextOptions
  *
  * @property {string} [breakPointSelector='p:nth-child(2)']
  * - CSS selector for the element before which a break point will be inserted
- *
- * @property {string} [contentClass='toggle-text__content']
- * - CSS class for the content container
- *
- * @property {string} [breakPointClass='toggle-text__break-point']
- * - CSS class for the inserted break point element
- *
- * @property {string} [btnClass='toggle-text__btn']
- * - CSS class for the toggle button
  *
  * @property {string} [btnTextExpand='Read More']
  * - Button text when content is collapsed
@@ -20,7 +11,19 @@
  * - Button text when content is expanded
  *
  * @property {number} [transitionDuration=400]
- * - Duration of the height transition in milliseconds
+ * - Duration of the height transition, in milliseconds
+ *
+ * @property {object} [classes]
+ * - CSS class names
+ *
+ * @property {string} [classes.content='toggle-text__content']
+ * - CSS class for the content container
+ *
+ * @property {string} [classes.breakPoint='toggle-text__break-point']
+ * - CSS class for the inserted break point element
+ *
+ * @property {string} [classes.btn='toggle-text__btn']
+ * - CSS class for the toggle button
  */
 
 /**
@@ -34,25 +37,29 @@ class ToggleText {
   constructor(root, options = {}) {
     this.root = root;
 
-    this.options = {
-      // CSS selector and class names
+    const defaults = {
       breakPointSelector : 'p:nth-child(2)',
-      contentClass       : 'toggle-text__content',
-      breakPointClass    : 'toggle-text__break-point',
-      btnClass           : 'toggle-text__btn',
-
-      // button text
       btnTextExpand      : 'Read More',
       btnTextCollapse    : 'Read Less',
-
-      // animation
       transitionDuration : 400,
-
-      ...options
+      classes: {
+        content          : 'toggle-text__content',
+        breakPoint       : 'toggle-text__break-point',
+        btn              : 'toggle-text__btn',
+      },
     };
 
-    this.content = this.root.querySelector('.' + this.options.contentClass);
-    this.btn     = this.root.querySelector('.' + this.options.btnClass);
+    this.options = {
+      ...defaults,
+      ...options,
+      classes: {
+        ...defaults.classes,
+        ...(options.classes ?? {}),
+      },
+    };
+
+    this.content = this.root.querySelector('.' + this.options.classes.content);
+    this.btn     = this.root.querySelector('.' + this.options.classes.btn);
 
     if (!this.content || !this.btn) {
       throw new Error(`${this.constructor.name}: Missing required elements.`);
@@ -92,7 +99,7 @@ class ToggleText {
 
     // insert a break point before the anchor element
     const breakPoint = document.createElement('div');
-    breakPoint.classList.add(this.options.breakPointClass);
+    breakPoint.classList.add(this.options.classes.breakPoint);
     this.content.insertBefore(breakPoint, anchorEl);
 
     this.breakPoint = breakPoint;

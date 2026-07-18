@@ -74,9 +74,10 @@ new ToggleText(container, {
 | Option               | Type     | Default                      | Description                                                              |
 |----------------------|----------|------------------------------|--------------------------------------------------------------------------|
 | `breakPointSelector` | `string` | `'p:nth-child(2)'`           | CSS selector for the element before which a break point will be inserted |
-| `contentClass`       | `string` | `'toggle-text__content'`     | CSS class for the content container                                      |
-| `breakPointClass`    | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                           |
-| `btnClass`           | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                          |
 | `btnTextExpand`      | `string` | `'Read More'`                | Button text when content is collapsed                                    |
 | `btnTextCollapse`    | `string` | `'Read Less'`                | Button text when content is expanded                                     |
 | `transitionDuration` | `number` | `400`                        | Duration of the height transition, in milliseconds                       |
+| `classes`            | `object` | `{...}`                      | CSS class names                                                          |
+| `classes.content`    | `string` | `'toggle-text__content'`     | CSS class for the content container                                      |
+| `classes.breakPoint` | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                           |
+| `classes.btn`        | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                          |
