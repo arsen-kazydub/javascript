@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} ScrollCompactHeaderOptions
+ * @typedef {object} ScrollCompactHeaderOptions
  *
  * @property {string} [compactClass='header-compact']
  * - CSS class applied to the header when the page is scrolled
