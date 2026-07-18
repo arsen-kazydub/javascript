@@ -9,7 +9,7 @@ and restores it when scrolled back to the top.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/scroll-compact-header.png"
+  <img src="screenshots/scroll-compact-header.webp"
        alt="Comparison of a full-height header and a compact header after scrolling">
 </kbd>
 
