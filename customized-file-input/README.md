@@ -9,7 +9,7 @@ allowing to achieve any visual appearance while maintaining full functionality.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/customized-file-input.png"
+  <img src="screenshots/customized-file-input.webp"
        alt="Two customized file input fields stacked vertically
             demonstrating independent component instances">
 </kbd>
