@@ -9,7 +9,7 @@ offering configurable break points and smooth height transitions.
 ## Screenshots
 
 <kbd>
-  <img src="screenshots/toggle-text.png"
+  <img src="screenshots/toggle-text.webp"
        alt="Collapsible text block showing only the first paragraph
             with a 'Read More' button below to expand hidden content">
 </kbd>
