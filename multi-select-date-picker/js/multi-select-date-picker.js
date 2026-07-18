@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} MultiSelectDatePickerOptions
+ * @typedef {object} MultiSelectDatePickerOptions
  * @property {string} [yearSelector='#date-year']   - CSS selector for the year select
  * @property {string} [monthSelector='#date-month'] - CSS selector for the month select
  * @property {string} [daySelector='#date-day']     - CSS selector for the day select

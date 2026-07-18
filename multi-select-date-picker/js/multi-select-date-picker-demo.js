@@ -1,6 +1,8 @@
-// Generates and appends option elements for a select.
-// For Year and Day selects, option text equals its value;
-// for Month select, option text is the full month name.
+/*
+ * Generates and appends option elements for a select.
+ * For Year and Day selects, option text equals its value;
+ * For Month select, option text is the full month name.
+ */
 function createSelectOptions(select, start, end, pad = false, isMonth = false) {
   const step = start <= end ? 1 : -1;
 
