@@ -32,7 +32,7 @@ according to French typographic rules.
 
 ### Setup
 
-Include `french-typographic-spacing.js`.
+Include `french-typographic-spacing.js` in your page.
 
 
 ### Initialization
@@ -40,10 +40,10 @@ Include `french-typographic-spacing.js`.
 ```js
 const container = document.querySelector('.container');
 
-// Default options
+// Default configuration
 new FrenchTypographicSpacing(container);
 
-// Custom options
+// Custom configuration
 new FrenchTypographicSpacing(container, {
   nbspType: 'narrow'
 });
