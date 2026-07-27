@@ -1,0 +1,50 @@
+#demo-examples {
+  margin: 0 auto;
+  transition: width 100ms;
+
+  .customized-scrollbar {
+    margin-top: 2rem;
+
+    h2 { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+  }
+}
+
+
+.customized-scrollbar {
+  /* "display: grid" is needed only on the demo website */
+  display: grid;
+
+  &.customized-scrollbar--horizontal.customized-scrollbar--initialized {
+    padding-bottom: 10px;
+  }
+  &.customized-scrollbar--vertical.customized-scrollbar--initialized {
+    padding-right: 10px;
+  }
+
+  .customized-scrollbar__container {
+    border-radius: 9px;
+    background: #f3f6f8;
+  }
+
+  .customized-scrollbar__content {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.customized-scrollbar--horizontal {
+  .gallery {
+    display: flex;
+    gap: 16px;
+    img {
+      width: 98px;
+      height: 98px;
+    }
+  }
+}
+
+.customized-scrollbar--vertical {
+  .customized-scrollbar__container {
+    --cs-vertical-max-height: 258px;
+  }
+}
