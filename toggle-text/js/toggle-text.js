@@ -2,19 +2,19 @@
  * @typedef {object} ToggleTextOptions
  *
  * @property {string} [breakPointSelector='p:nth-child(2)']
- * - CSS selector for the element before which a break point will be inserted
+ * - CSS selector for the element before which the break point is inserted
  *
  * @property {string} [btnTextExpand='Read More']
- * - Button text when content is collapsed
+ * - Button text when the content is collapsed
  *
  * @property {string} [btnTextCollapse='Read Less']
- * - Button text when content is expanded
+ * - Button text when the content is expanded
  *
  * @property {number} [transitionDuration=400]
  * - Duration of the height transition, in milliseconds
  *
  * @property {object} [classes]
- * - CSS class names
+ * - CSS class names used by the plugin
  *
  * @property {string} [classes.content='toggle-text__content']
  * - CSS class for the content container

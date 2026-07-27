@@ -38,7 +38,10 @@ offering configurable break points and smooth height transitions.
 
 ### Setup
 
-Include `toggle-text.css` and `toggle-text.js`.
+Include the following assets in your page:
+
+* `toggle-text.css`
+* `toggle-text.js`
 
 
 ### Markup
@@ -58,10 +61,10 @@ Include `toggle-text.css` and `toggle-text.js`.
 ```js
 const container = document.querySelector('.toggle-text');
 
-// Default options
+// Default configuration
 new ToggleText(container);
 
-// Custom options
+// Custom configuration
 new ToggleText(container, {
   btnTextExpand: 'Lire plus',
   btnTextCollapse: 'Lire moins'
@@ -71,13 +74,13 @@ new ToggleText(container, {
 
 ## Options
 
-| Option               | Type     | Default                      | Description                                                              |
-|----------------------|----------|------------------------------|--------------------------------------------------------------------------|
-| `breakPointSelector` | `string` | `'p:nth-child(2)'`           | CSS selector for the element before which a break point will be inserted |
-| `btnTextExpand`      | `string` | `'Read More'`                | Button text when content is collapsed                                    |
-| `btnTextCollapse`    | `string` | `'Read Less'`                | Button text when content is expanded                                     |
-| `transitionDuration` | `number` | `400`                        | Duration of the height transition, in milliseconds                       |
-| `classes`            | `object` | `{...}`                      | CSS class names                                                          |
-| `classes.content`    | `string` | `'toggle-text__content'`     | CSS class for the content container                                      |
-| `classes.breakPoint` | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                           |
-| `classes.btn`        | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                          |
+| Option               | Type     | Default                      | Description                                                           |
+|----------------------|----------|------------------------------|-----------------------------------------------------------------------|
+| `breakPointSelector` | `string` | `'p:nth-child(2)'`           | CSS selector for the element before which the break point is inserted |
+| `btnTextExpand`      | `string` | `'Read More'`                | Button text when the content is collapsed                             |
+| `btnTextCollapse`    | `string` | `'Read Less'`                | Button text when the content is expanded                              |
+| `transitionDuration` | `number` | `400`                        | Duration of the height transition (in milliseconds)                   |
+| `classes`            | `object` | `{...}`                      | CSS class names used by the plugin                                    |
+| `classes.content`    | `string` | `'toggle-text__content'`     | CSS class for the content container                                   |
+| `classes.breakPoint` | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                        |
+| `classes.btn`        | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                       |
