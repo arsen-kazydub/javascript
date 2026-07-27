@@ -39,7 +39,10 @@ Each input field is paired with a slider for fast and intuitive data entry.
 
 ### Setup
 
-Include `mortgage-calculator.css` and `mortgage-calculator.js`.
+Include the following assets in your page:
+
+* `mortgage-calculator.css`
+* `mortgage-calculator.js`
 
 
 ### Markup
@@ -56,10 +59,10 @@ Copy the markup from `mortgage-calculator.html`.
 ```js
 const calculator = document.getElementById('mortgage-calculator');
 
-// Default options
+// Default configuration
 new MortgageCalculator(calculator);
 
-// Custom options
+// Custom configuration
 new MortgageCalculator(calculator, {
   price: 500000,
   maxPrice: 1000000
@@ -69,17 +72,17 @@ new MortgageCalculator(calculator, {
 
 ## Options
 
-| Option            | Type     | Default   | Description                      |
-|-------------------|----------|-----------|----------------------------------|
-| `price`           | `number` | `1000000` | Initial property price (USD)     |
-| `downPayment`     | `number` | `20`      | Initial down payment (%)         |
-| `loanPeriod`      | `number` | `25`      | Initial loan period (years)      |
-| `interestRate`    | `number` | `4`       | Initial interest rate (%)        |
-| `minPrice`        | `number` | `10000`   | Minimum allowed price (USD)      |
-| `maxPrice`        | `number` | `2000000` | Maximum allowed price (USD)      |
-| `minDownPayment`  | `number` | `10`      | Minimum allowed down payment (%) |
-| `maxDownPayment`  | `number` | `80`      | Maximum allowed down payment (%) |
-| `minLoanPeriod`   | `number` | `1`       | Minimum loan period (years)      |
-| `maxLoanPeriod`   | `number` | `30`      | Maximum loan period (years)      |
-| `minInterestRate` | `number` | `1`       | Minimum interest rate (%)        |
-| `maxInterestRate` | `number` | `10`      | Maximum interest rate (%)        |
+| Option            | Type     | Default   | Description                               |
+|-------------------|----------|-----------|-------------------------------------------|
+| `price`           | `number` | `1000000` | Initial property price (in USD)           |
+| `downPayment`     | `number` | `20`      | Initial down payment (in percent)         |
+| `loanPeriod`      | `number` | `25`      | Initial loan period (in years)            |
+| `interestRate`    | `number` | `4`       | Initial interest rate (in percent)        |
+| `minPrice`        | `number` | `10000`   | Minimum allowed price (in USD)            |
+| `maxPrice`        | `number` | `2000000` | Maximum allowed price (in USD)            |
+| `minDownPayment`  | `number` | `10`      | Minimum allowed down payment (in percent) |
+| `maxDownPayment`  | `number` | `80`      | Maximum allowed down payment (in percent) |
+| `minLoanPeriod`   | `number` | `1`       | Minimum loan period (in years)            |
+| `maxLoanPeriod`   | `number` | `30`      | Maximum loan period (in years)            |
+| `minInterestRate` | `number` | `1`       | Minimum interest rate (in percent)        |
+| `maxInterestRate` | `number` | `10`      | Maximum interest rate (in percent)        |
