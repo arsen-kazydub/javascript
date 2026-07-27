@@ -49,7 +49,7 @@ Include the following assets in your page:
 ```html
 <div class="toggle-text">
   <div class="toggle-text__content">
-    <!-- Your text -->
+    <!-- your text -->
   </div>
   <button type="button" class="btn btn-primary toggle-text__btn">Read More</button>
 </div>
