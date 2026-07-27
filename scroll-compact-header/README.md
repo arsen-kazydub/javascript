@@ -33,7 +33,10 @@ and restores it when scrolled back to the top.
 
 ### Setup
 
-Include `scroll-compact-header.css` and `scroll-compact-header.js`.
+Include the following assets in your page:
+
+* `scroll-compact-header.css`
+* `scroll-compact-header.js`
 
 
 ### Initialization
@@ -41,10 +44,10 @@ Include `scroll-compact-header.css` and `scroll-compact-header.js`.
 ```js
 const header = document.getElementById('header');
 
-// Default options
+// Default configuration
 new ScrollCompactHeader(header);
 
-// Custom options
+// Custom configuration
 new ScrollCompactHeader(header, {
   compactClass: 'header-small'
 });
