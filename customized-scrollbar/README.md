@@ -41,7 +41,7 @@ optional arrow buttons, and smooth GSAP-powered animations.
 
 ### Setup
 
-Include the following files in your page:
+Include the following assets in your page:
 
 1. GSAP
 2. `customized-scrollbar.css`
