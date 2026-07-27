@@ -11,7 +11,7 @@
  * - Base z-index applied to each ui-select to appear above page content
  *
  * @property {object} [classes]
- * - CSS class names
+ * - CSS class names used by the plugin
  *
  * @property {string} [classes.wrapper='customized-select']
  * - CSS class for the wrapper element

@@ -42,7 +42,10 @@ fully functional and supporting both mouse and keyboard interactions.
 
 ### Setup
 
-Include `customized-select.css` and `customized-select.js`.
+Include the following assets in your page:
+
+* `customized-select.css`
+* `customized-select.js`
 
 
 ### Initialization
@@ -50,10 +53,10 @@ Include `customized-select.css` and `customized-select.js`.
 ```js
 const select = document.querySelector('select');
 
-// Default options
+// Default configuration
 new CustomizedSelect(select);
 
-// Custom options
+// Custom configuration
 new CustomizedSelect(select, {
   width: '100%',
   visibleOptions: 6
@@ -68,7 +71,7 @@ new CustomizedSelect(select, {
 | `width`                    | `string \| number \| null` | `null`                                     | Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated    |
 | `visibleOptions`           | `number`                   | `0`                                        | Maximum number of visible options before scrolling appears; if 0, all options are shown |
 | `baseZIndex`               | `number`                   | `100`                                      | Base z-index applied to each ui-select to appear above page content                     |
-| `classes`                  | `object`                   | `{...}`                                    | CSS class names                                                                         |
+| `classes`                  | `object`                   | `{...}`                                    | CSS class names used by the plugin                                                      |
 | `classes.wrapper`          | `string`                   | `'customized-select'`                      | CSS class for the wrapper element                                                       |
 | `classes.wrapperSelected`  | `string`                   | `'customized-select--selected'`            | CSS class for the wrapper element applied when the ui-select is open                    |
 | `classes.uiSelect`         | `string`                   | `'customized-select__ui'`                  | CSS class for the ui-select element                                                     |
