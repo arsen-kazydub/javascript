@@ -34,7 +34,7 @@ A pure JavaScript plugin for selecting a date using three synchronized `select` 
 
 ### Setup
 
-Include `multi-select-date-picker.js`.
+Include `multi-select-date-picker.js` in your page.
 
 
 ### Markup
@@ -63,10 +63,10 @@ Add a container with three `select` elements for the year, month, and day.
 ```js
 const container = document.getElementById('date-picker');
 
-// Default options
+// Default configuration
 new MultiSelectDatePicker(container);
 
-// Custom options
+// Custom configuration
 new MultiSelectDatePicker(container, {
   yearSelector: '#my-year',
   monthSelector: '.my-month',
