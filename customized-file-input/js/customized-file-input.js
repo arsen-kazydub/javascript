@@ -5,7 +5,7 @@
  * - Text displayed inside the fake button
  *
  * @property {object} [classes]
- * - CSS class names
+ * - CSS class names used by the plugin
  *
  * @property {string} [classes.wrapper='customized-file-input']
  * - CSS class for the wrapper element containing the file input and decorative elements

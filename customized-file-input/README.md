@@ -38,7 +38,10 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 ### Setup
 
-Include `customized-file-input.css` and `customized-file-input.js`.
+Include the following assets in your page:
+
+* `customized-file-input.css`
+* `customized-file-input.js`
 
 
 ### Initialization
@@ -46,10 +49,10 @@ Include `customized-file-input.css` and `customized-file-input.js`.
 ```js
 const input = document.querySelector('input[type="file"]');
 
-// Default options
+// Default configuration
 new CustomizedFileInput(input);
 
-// Custom options
+// Custom configuration
 new CustomizedFileInput(input, {
   fakeBtnText: 'Select File'
 });
@@ -61,7 +64,7 @@ new CustomizedFileInput(input, {
 | Option              | Type     | Default                               | Description                                                                         |
 |---------------------|----------|---------------------------------------|-------------------------------------------------------------------------------------|
 | `fakeBtnText`       | `string` | `'Browse'`                            | Text displayed inside the fake button                                               |
-| `classes`           | `object` | `{...}`                               | CSS class names                                                                     |
+| `classes`           | `object` | `{...}`                               | CSS class names used by the plugin                                                  |
 | `classes.wrapper`   | `string` | `'customized-file-input'`             | CSS class for the wrapper element containing the file input and decorative elements |
 | `classes.fakeInput` | `string` | `'customized-file-input__fake-input'` | CSS class for the fake input where the selected file name is displayed              |
 | `classes.fakeBtn`   | `string` | `'customized-file-input__fake-btn'`   | CSS class for the fake button                                                       |
