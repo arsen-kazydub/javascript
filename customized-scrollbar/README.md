@@ -43,10 +43,10 @@ optional arrow buttons, and smooth GSAP-powered animations.
 
 Include the following assets in your page:
 
-1. GSAP
-2. `customized-scrollbar.css`
-3. `customized-scrollbar.js`
-4. `icons` directory containing two SVG icons.
+* GSAP
+* `customized-scrollbar.css`
+* `customized-scrollbar.js`
+* `icons` directory containing two SVG icons.
 
 
 ### Markup
